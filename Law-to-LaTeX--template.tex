@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage[pdftex,
+pdftitle={},
+pdfauthor={},
+pdfsubject={Example of bill section text in LaTeX}
+pdfkeywords={LaTeX, law},
+pdfpagemode=UseOutlines,
+bookmarks,bookmarksopen,
+bookmarksnumbered, % Number sections like "(a) Definitions" in Bookmarks
+pdfstartview=FitH
+]
+{hyperref} 
+\usepackage{bookmark}
+\usepackage{tocloft}
+\usepackage[small]{titlesec} % Change size of section headings
+
+\renewcommand{\thesection}{(\alph{section})} % Change section headings to (a)
+\renewcommand{\labelenumii}{(\Alph{enumii})} % Change labels in enum environment to (A)
+
+\setlength{\cftsecnumwidth}{2em} % From tocloft, change the width of section numbers in toc
+\setlength{\cftbeforesecskip}{.75em} % Change line spacing of toc so more sections can fit
+
+\title{}
+
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\abstract{}
+
+\bookmark[level=1,page=1,view=FitH \calc{\paperheight-\topmargin-1in-\headheight-\headsep}]{Title} % Add Title Bookmark
+\pdfbookmark[1]{\contentsname}{toc}
+\tableofcontents
+
+\end{document}

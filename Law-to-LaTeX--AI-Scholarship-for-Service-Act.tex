@@ -1,0 +1,357 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage[pdftex,
+pdftitle={Law to LaTeX: AI Scholarship for Service Act},
+pdfauthor={David Fan},
+pdfsubject={Example of bill section text in LaTeX}
+pdfkeywords={LaTeX, law, AI, scholarship},
+pdfpagemode=UseOutlines,
+bookmarks,bookmarksopen,
+bookmarksnumbered, % Number sections like "(a) Definitions" in Bookmarks
+pdfstartview=FitH
+]
+{hyperref} 
+\usepackage{bookmark}
+\usepackage{tocloft}
+\usepackage[small]{titlesec} % Change size of section headings
+
+\renewcommand{\thesection}{(\alph{section})} % Change section headings to (a)
+\renewcommand{\labelenumii}{(\Alph{enumii})} % Change labels in enum environment to (A)
+
+\setlength{\cftsecnumwidth}{2em} % From tocloft, change the width of section numbers in toc
+\setlength{\cftbeforesecskip}{.75em} % Change line spacing of toc so more sections can fit
+\title{Law to \LaTeX: AI~Scholarship-for-Service~Act.}
+
+\author{David Fan}
+
+%ref / label
+%Section (d) / sec:program
+%Section (i) / sec:support
+%Section (i)(2) / enum:terms
+%Section (l) / sec:repay
+%Section (k) / sec:amount
+%Appendix I / appendix:ai
+%Section (i)(2)(D) / enum:postaward
+
+\begin{document}
+
+\maketitle
+
+\abstract{This is an experiment in converting bill text to \LaTeX\ by hand \& python script. The text is section 2208 of H.R. 4521 EAS in the 117\textsuperscript{th}~Congress, the \emph{AI~Scholarship-for-Service~Act.}}
+
+\bookmark[level=1,page=1,view=FitH \calc{\paperheight-\topmargin-1in-\headheight-\headsep}]{Title} % Add Title Bookmark
+\pdfbookmark[1]{\contentsname}{toc} % Add Contents Bookmark
+
+\tableofcontents
+
+    \section{Definitions.}In this section:
+\begin{enumerate}
+            \item {\bf Artificial intelligence.}---The term ``artificial 
+        intelligence'' or ``AI'' has the meaning given the term 
+        ``artificial intelligence'' in \hyperref[appendix:ai]{section~238(g)} of the John S. 
+        McCain National Defense Authorization Act for Fiscal Year 2019
+        (10 U.S.C. 2358 note).
+            \item {\bf Executive agency.}---The term ``executive agency'' has 
+        the meaning given the term ``Executive agency'' in section 105 
+        of title 5, United States Code.\footnote{``Executive agency" means an Executive department, a Government corporation, and an independent establishment.}
+            \item {\bf Registered internship.}---The term ``registered 
+        internship'' means a Federal Registered Internship Program 
+        coordinated through the Department of Labor.
+\end{enumerate}
+    \section{In General.}The Director, in coordination with the Director of 
+the Office of Personnel Management, the Director of the National 
+Institute of Standards and Technology, and the heads of other agencies 
+with appropriate scientific knowledge, shall establish a Federal 
+artificial intelligence scholarship-for-service program (referred to in 
+this section as the Federal~AI~Scholarship-for-Service~Program) to 
+recruit and train artificial intelligence professionals to lead and 
+support the application of artificial intelligence to the missions of 
+Federal, State, local, and Tribal governments.
+    \section{Qualified Institution of Higher Education.}The Director, in 
+coordination with the heads of other agencies with appropriate 
+scientific knowledge, shall establish criteria to designate qualified 
+institutions of higher education that shall be eligible to participate 
+in the Federal AI Scholarship-for-Service program. Such criteria shall 
+include---
+\begin{enumerate}
+            \item measures of the institution's demonstrated excellence 
+        in the education of students in the field of artificial 
+        intelligence; and
+            \item measures of the institution's ability to attract and 
+        retain a diverse and non-traditional student population in the 
+        fields of science, technology, engineering, and mathematics, 
+        which may include the ability to attract women, minorities, and 
+        individuals with disabilities.
+\end{enumerate}
+    \section{Program Description and Components.}\label{sec:program}The Federal AI 
+Scholarship-for-Service Program shall---
+\begin{enumerate}
+            \item provide scholarships through qualified institutions of 
+        higher education to students who are enrolled in programs of 
+        study at institutions of higher education leading to degrees or 
+        concentrations in or related to the artificial intelligence 
+        field;
+            \item provide the scholarship recipients with summer 
+        internship opportunities, registered internships, or other 
+        meaningful temporary appointments in the Federal workforce 
+        focusing on AI projects or research;
+            \item prioritize the employment placement of scholarship 
+        recipients in executive agencies;
+            \item identify opportunities to promote multi-disciplinary 
+        programs of study that integrate basic or advanced AI training 
+        with other fields of study, including those that address the 
+        social, economic, legal, and ethical implications of human 
+        interaction with AI systems; and
+            \item support capacity-building education research programs 
+        that will enable postsecondary educational institutions to 
+        expand their ability to train the next-generation AI workforce, 
+        including AI researchers and practitioners.
+\end{enumerate}
+    \section{Scholarship Amounts.}Each scholarship under \hyperref[sec:program]{subsection (d)} 
+shall be in an amount that covers the student's tuition and fees at the 
+institution for not more than 3 years and provides the student with an 
+additional stipend.
+    \section{Post-award Employment Obligations.}Each scholarship recipient, 
+as a condition of receiving a scholarship under the program, shall 
+enter into an agreement under which the recipient agrees to work for a 
+period equal to the length of the scholarship, following receipt of the 
+student's degree, in the AI mission of---
+\begin{enumerate}
+            \item an executive agency;
+            \item Congress, including any agency, entity, office, or 
+        commission established in the legislative branch;
+            \item an interstate agency;
+            \item a State, local, or Tribal government, which may include 
+        instruction in AI-related skill sets in a public school system; 
+        or
+            \item a State, local, or Tribal government-affiliated 
+        nonprofit entity that is considered to be critical 
+        infrastructure (as defined in section~1016(e) of the USA 
+        Patriot Act (42 U.S.C.~5195c(e))).\footnote{The term ``critical infrastructure" means systems and assets, whether physical or virtual, so vital to the United States that the incapacity or destruction of such systems and assets would have a debilitating impact on security, national economic security, national public health or safety, or any combination of those matters.}
+\end{enumerate}
+    \section{Hiring Authority.}
+\begin{enumerate}
+            \item {\bf Appointment in excepted service.}---Notwithstanding any 
+        provision of chapter 33 of title 5, United States Code, 
+        governing appointments in the competitive service, an executive 
+        agency may appoint an individual who has completed the eligible 
+        degree program for which a scholarship was awarded to a 
+        position in the excepted service in the executive agency.
+            \item {\bf Noncompetitive conversion.}---Except as provided in 
+        paragraph~(4), upon fulfillment of the service term, an 
+        employee appointed under paragraph~(1) may be converted 
+        noncompetitively to term, career-conditional, or career 
+        appointment.\footnote{{\em 5 USC 3304a: Competitive service; career appointment after 3 years' temporary service}
+        \begin{enumerate}[(a)]
+        \item An individual serving in a position in the competitive service under an indefinite appointment or a temporary appointment pending establishment of a register (other than an individual serving under an overseas limited appointment, or in a position classified above GS–15 pursuant to section~5108) acquires competitive status and is entitled to have his appointment converted to a career appointment, without condition, when---
+        \begin{enumerate}[(1)]
+        \item he completes, without break in service of more than 30 days, a total of at least 3~years of service in such a position;
+        \item he passes a suitable noncompetitive examination;
+        \item the appointing authority (A) recommends to the Office of Personnel Management that the appointment of the individual be converted to a career appointment and (B) certifies to the Office that the work performance of the individual for the past 12~months has been satisfactory; and
+        \item he meets Office qualification requirements for the position and is otherwise eligible for career appointment.
+        \end{enumerate}
+        \end{enumerate}
+        }
+            \item {\bf Timing of conversion.}---An executive agency may 
+        noncompetitively convert a term employee appointed under 
+        paragraph~(2) to a career-conditional or career appointment 
+        before the term appointment expires.
+            \item {\bf Authority to decline conversion.}---An executive agency 
+        may decline to make the noncompetitive conversion or 
+        appointment under paragraph~(2) for cause.
+\end{enumerate}
+    \section{Eligibility.}To be eligible to receive a scholarship under 
+this section, an individual shall---
+\begin{enumerate}
+            \item be a citizen or lawful permanent resident of the United 
+        States;
+            \item demonstrate a commitment to a career in advancing the 
+        field of AI;
+            \item be---
+\begin{enumerate}
+                    \item a full-time student in an eligible degree 
+                program at a qualified institution of higher education, 
+                as determined by the Director;
+                    \item a student pursuing a degree on a less than 
+                full-time basis, but not less than half-time basis; or
+                    \item an AI faculty member on sabbatical to advance 
+                knowledge in the field; and
+\end{enumerate}
+            \item accept the terms of a scholarship under this section.
+\end{enumerate}
+    \section{Conditions of Support.}\label{sec:support}
+\begin{enumerate}
+            \item {\bf In general.}---As a condition of receiving a scholarship 
+        under this section, a recipient shall agree to provide the 
+        qualified institution of higher education with annual 
+        verifiable documentation of post-award employment and up-to-date contact information.
+            \item {\bf Terms.}\label{enum:terms}---A scholarship recipient under this section 
+        shall be liable to the United States as provided in \hyperref[sec:amount]{subsection~(k)} if the individual---
+\begin{enumerate}
+                    \item fails to maintain an acceptable level of 
+                academic standing at the applicable institution of 
+                higher education, as determined by the Director;
+                    \item is dismissed from the applicable institution of 
+                higher education for disciplinary reasons;
+                    \item withdraws from the eligible degree program 
+                before completing the program;
+                    \item \label{enum:postaward}declares that the individual does not intend to 
+                fulfill the post-award employment obligation under this 
+                section; or
+                    \item fails to fulfill the post-award employment 
+                obligation of the individual under this section.
+\end{enumerate}
+\end{enumerate}
+    \section{Monitoring Compliance.}As a condition of participating in the 
+program, a qualified institution of higher education shall---
+\begin{enumerate}
+            \item enter into an agreement with the Director to monitor 
+        the compliance of scholarship recipients with respect to their 
+        post-award employment obligations; and
+            \item provide to the Director, on an annual basis, the post-award employment documentation required under \hyperref[sec:support]{subsection~(i)} 
+        for scholarship recipients through the completion of their 
+        post-award employment obligations.
+\end{enumerate}
+    \section{Amount of Repayment.}\label{sec:amount}
+\begin{enumerate}
+            \item {\bf Less than 1 year of service.}---If a circumstance 
+        described in \hyperref[enum:terms]{subsection~(i)(2)} occurs before the completion of 
+        1 year of a post-award employment obligation under this 
+        section, the total amount of scholarship awards received by the 
+        individual under this section shall---
+\begin{enumerate}
+                    \item be repaid; or
+                    \item be treated as a loan to be repaid in accordance \\
+                with \hyperref[sec:repay]{subsection~(l)}.
+\end{enumerate}
+            \item 1 or more years of service.---If a circumstance 
+        described in \hyperref[enum:postaward]{subparagraph (D) or (E) of subsection~(i)(2)} 
+        occurs after the completion of 1 or more years of a post-award 
+        employment obligation under this section, the total amount of 
+        scholarship awards received by the individual under this 
+        section, reduced by the ratio of the number of years of service 
+        completed divided by the number of years of service required, 
+        shall---
+\begin{enumerate}
+                    \item be repaid; or
+                    \item be treated as a loan to be repaid in accordance \\
+                with \hyperref[sec:repay]{subsection~(l)}.
+\end{enumerate}
+\end{enumerate}
+    \section{Repayments.}\label{sec:repay}A loan described in \hyperref[sec:amount]{subsection~(k)} shall---
+\begin{enumerate}
+            \item be treated as a Federal Direct Unsubsidized Stafford 
+        Loan\footnote{These are fixed interest rate loans at 4.99\% for undergraduate borrowers and 6.54\% for graduate or professional borrowers at the time of this writing.} under part D of title IV of the Higher Education Act of 
+        1965 (20 U.S.C. 1087a et seq.); and
+            \item be subject to repayment, together with interest thereon 
+        accruing from the date of the scholarship award, in accordance 
+        with terms and conditions specified by the Director (in 
+        consultation with the Secretary of Education).
+\end{enumerate}
+    \section{Collection of Repayment.}
+\begin{enumerate}
+            \item {\bf In general.}---In the event that a scholarship recipient 
+        is required to repay the scholarship award under this section, 
+        the qualified institution of higher education providing the 
+        scholarship shall---
+\begin{enumerate}
+                    \item determine the repayment amounts and notify the 
+                recipient and the Director of the amounts owed; and
+                    \item collect the repayment amounts within a period 
+                of time as determined by the Director, or the repayment 
+                amounts shall be treated as a loan in accordance with 
+                \hyperref[sec:repay]{subsection~(l)}.
+\end{enumerate}
+            \item {\bf Returned to treasury.}---Except as provided in paragraph~(3), any repayment under this subsection shall be returned to 
+        the Treasury of the United States.
+            \item {\bf Retain percentage.}---A qualified institution of higher 
+        education may retain a percentage of any repayment the 
+        institution collects under this subsection to defray 
+        administrative costs associated with the collection. The 
+        Director shall establish a fixed percentage that will apply to 
+        all eligible entities, and may update this percentage as 
+        needed, in the determination of the Director.
+\end{enumerate}
+    \section{Exceptions.}The Director may provide for the partial or total 
+waiver or suspension of any service or payment obligation by an 
+individual under this section whenever compliance by the individual 
+with the obligation is impossible or would involve extreme hardship to 
+the individual, or if enforcement of such obligation with respect to 
+the individual would be unconscionable.
+    \section{Public Information.}
+\begin{enumerate}
+            \item {\bf Evaluation.}---The Director, in coordination with the 
+        Director of the Office of Personnel Management, shall annually 
+        evaluate and make public, in a manner that protects the 
+        personally identifiable information of scholarship recipients, 
+        information on the success of recruiting individuals for 
+        scholarships under this section and on hiring and retaining 
+        those individuals in the public sector AI workforce, including 
+        information on---
+\begin{enumerate}
+                    \item placement rates;
+                    \item where students are placed, including job titles 
+                and descriptions;
+                    \item salary ranges for students not released from 
+                obligations under this section;
+                    \item how long after graduation students are placed;
+                    \item how long students stay in the positions they 
+                enter upon graduation;
+                    \item how many students are released from 
+                obligations; and
+                    \item what, if any, remedial training is required.
+\end{enumerate}
+            \item {\bf Reports.}---The Director, in coordination with the Office 
+        of Personnel Management, shall submit, not less frequently than 
+        once every 3 years, to the Committee on Homeland Security and 
+        Governmental Affairs of the Senate, the Committee on Commerce, 
+        Science, and Transportation of the Senate, the Committee on 
+        Science, Space, and Technology of the House of Representatives, 
+        and the Committee on Oversight and Reform of the House of 
+        Representatives a report, including the results of the 
+        evaluation under paragraph~(1) and any recent statistics 
+        regarding the size, composition, and educational requirements 
+        of the Federal AI workforce.
+            \item {\bf Resources.}---The Director, in coordination with the 
+        Director of the Office of Personnel Management, shall provide 
+        consolidated and user-friendly online resources for prospective 
+        scholarship recipients, including, to the extent practicable---
+\begin{enumerate}
+                    \item searchable, up-to-date, and accurate 
+                information about participating institutions of higher 
+                education and job opportunities related to the AI 
+                field; and
+                    \item a modernized description of AI careers.
+\end{enumerate}
+\end{enumerate}
+    \section{Refresh.}Not less than once every 2 years, the Director, in 
+coordination with the Director of the Office of Personnel Management, 
+shall review and update the Federal AI Scholarship-for-Service Program 
+to reflect advances in technology.
+
+\appendix
+
+\renewcommand{\thesection}{\Roman{section}}
+
+    \section{Artificial Intelligence Defined.}The term \label{appendix:ai}
+``artificial intelligence'' includes the following:
+\begin{enumerate}
+            \item Any artificial system that performs tasks under varying 
+        and unpredictable circumstances without significant human 
+        oversight, or that can learn from experience and improve 
+        performance when exposed to data sets.
+            \item An artificial system developed in computer software, 
+        physical hardware, or other context that solves tasks requiring
+        human-like perception, cognition, planning, learning, 
+        communication, or physical action.
+            \item An artificial system designed to think or act like a 
+        human, including cognitive architectures and neural networks.
+            \item A set of techniques, including machine learning, that is 
+        designed to approximate a cognitive task.
+            \item An artificial system designed to act rationally, 
+        including an intelligent software agent or embodied robot that 
+        achieves goals using perception, planning, reasoning, learning, 
+        communicating, decision making, and acting.
+\end{enumerate}
+
+\end{document}
